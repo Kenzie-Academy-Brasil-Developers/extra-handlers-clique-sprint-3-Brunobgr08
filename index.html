@@ -16,54 +16,54 @@
         <button id="gray_button">Gray</button>
         <button id="blue_button">Blue</button>
         <button id="pink_button">Pink</button>
-        <div id="color_box" class="gray"></div>        
-        <script>
-            const color_box = document.getElementById("color_box");
-            
-            const gray_button = document.getElementById("gray_button");
-            gray_button.onclick = function() {
-                color_box.className = "gray";
-            };
-            
-            const blue_button = document.getElementById("blue_button");
-            blue_button.onclick = function() {
-                color_box.className = "blue";
-            };
-
-            const pink_button = document.getElementById("pink_button");
-            pink_button.onclick = function(){
-                color_box.className = "pink";
-            }
-        </script>
+        <div id="color_box" class="gray"></div>
 
         <hr>
 
         <h2>2. Counter</h2>
         <button id="counter_button">This fabulous button</button>
         has been clicked <span id="countspan">0</span> times.
-        <script>
-            let count = 0;
-            const countspan = document.getElementById("countspan");
-            
-            const counter_button = document.getElementById("counter_button");
-            counter_button.onclick = function() {
-                count++;
-                countspan.innerText = count;
-            }
-        </script>
 
         <hr>
 
         <h2>3. Even or Odd?</h2>
         <button id="even_or_odd_button">Is the count even or odd?</button>
         <script>
-            const even_or_odd_button = document.getElementById("even_or_odd_button");
-            even_or_odd_button.onclick = function() {
-                if (count % 2 === 0){
-                    alert("O contador é par!");
-                }else
-                    alert ("O contador é ímpar!")
-            }
+                const color_box = document.getElementById("color_box");
+
+                const gray_button = document.getElementById("gray_button");
+                gray_button.onclick = function() {
+                    color_box.className = "gray";
+                };
+
+                const blue_button = document.getElementById("blue_button");
+                blue_button.onclick = function() {
+                    color_box.className = "blue";
+                };
+
+                const pink_button = document.getElementById("pink_button");
+                pink_button.onclick = function(){
+                    color_box.className = "pink";
+                }
+        </script>
+        <script>
+                let count = 0;
+                const countspan = document.getElementById("countspan");
+
+                const counter_button = document.getElementById("counter_button");
+                counter_button.onclick = function() {
+                    count++;
+                    countspan.innerText = count;
+                }
+        </script>
+        <script>
+                const even_or_odd_button = document.getElementById("even_or_odd_button");
+                even_or_odd_button.onclick = function() {
+                    if (count % 2 === 0){
+                         alert("O contador é par!");
+                    }else
+                        alert ("O contador é ímpar!")
+                }
         </script>
     </body>
 </html>
